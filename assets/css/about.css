@@ -1,0 +1,106 @@
+.about-main-wrapper {
+  flex: 1 0 800px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  position:relative;
+}
+
+.about-content-wrapper {
+  padding: 3rem 1rem;
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  z-index: 1;
+  background: transparent;
+}
+
+.content-box {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3rem;
+}
+
+.content-box.small-para {
+  justify-content: flex-end;
+}
+
+.content-box.small-para p {
+  width: 40%;
+}
+
+.content-box.left-padding {
+  padding-left: 3rem;
+}
+
+.content-box .short-title {
+  width: 50%;
+  font-weight: bold;
+}
+
+.content-box.list h4 {
+  font-weight: bolder;
+}
+
+.top-layer {
+  z-index: 1;
+}
+
+.circle {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle.red {
+  background-color: #9b1c4a;
+  top: -100px;
+  left: -43px;
+  width: 17vw;
+  height: 17vw;
+}
+
+.circle.yellow {
+  background-color: #f6bc18;
+  top: 450px;
+  right: 50%;
+  width: 20vw;
+  height: 20vw;
+}
+
+.circle.green {
+  background-color: #1f992a;
+  bottom: 280px;
+  right: 1000px;
+  width: 35vw;
+  height: 35vw;
+}
+
+.circle.blue {
+  background-color: #34b8d9;
+  top: 170px;
+  right: -20px;
+  width: 30vw;
+  height: 30vw;
+}
+
+.circle.light-red {
+  background-color:#e8432a;
+  bottom: -122px;
+  right: 250px;
+  width: 30vw;
+  height: 30vw;
+}
+
+
+.circle-wrapper {
+ flex:1;
+  width: 100%;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  overflow: hidden;
+}

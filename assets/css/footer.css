@@ -1,0 +1,75 @@
+.footer-wrapper {
+  flex: 0 0 215px;
+  display: flex;
+  width: 100%;
+  background: #3c3b3c;
+  color: white;
+  font-size: 12px;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 173px;
+}
+
+.footer-wrapper article {
+  margin-right: 0.5rem;
+}
+
+.footer-logo-container {
+  flex: 0 0 10%;
+}
+
+.footer-logo-container img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-newsletter-container {
+  flex: 0 0 25%;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+}
+
+.newsletter-form label {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form input {
+  margin-bottom: 0.5rem;
+}
+
+#email-input {
+  border-radius: 25px;
+  width: 100%;
+  min-width: 3rem;
+}
+
+.newsletter-form button {
+  background: #f9c11b;
+  border-radius: 25px;
+  padding: .2rem;
+  width: 25%;
+  min-width: 3rem;
+}
+
+.footer-contacts-container {
+  flex: 0 0 15%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-misc-container {
+  flex: 0 0 15%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-misc-container a{
+  cursor: pointer;
+}
+.footer-misc-container a:hover {
+  text-decoration: underline;
+}
