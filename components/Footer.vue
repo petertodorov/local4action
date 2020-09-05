@@ -11,7 +11,13 @@
     <article class="footer-newsletter-container">
       <form class="newsletter-form" action="#" method="post">
         <label for="email-input">Newsletter subscription</label>
-        <input id="email-input" name="email" type="email" required />
+        <input
+          id="email-input"
+          name="email"
+          type="email"
+          placeholder="yourEmail@domain.com"
+          required
+        />
         <button type="submit">Send</button>
       </form>
     </article>

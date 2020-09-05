@@ -39,6 +39,7 @@
 
 .newsletter-form input {
   margin-bottom: 0.5rem;
+  padding:0.5em;
 }
 
 #email-input {
@@ -55,6 +56,9 @@
   min-width: 3rem;
 }
 
+.newsletter-form button:hover {
+  opacity:0.5;
+}
 .footer-contacts-container {
   flex: 0 0 15%;
   display: flex;
