@@ -27,32 +27,36 @@
         </div>
       </section>
     </article>
-    <!-- <article class="circles-container">
-      <canvas id="canvas5"></canvas>
-    </article> -->
-    <article ref="myButton" class="circles-container" @click="clickedButton">
-      I WILL HOLD ANIMATED CIRCLES AND WILL HAVE NO BACKGROUND
-      <canvas id="canvas5"></canvas>
+    <article ref="canvasContainer" class="canvas-container">
+      <canvas ref="canvas"></canvas>
     </article>
   </main>
 </template>
-
 <script>
-// // import Canvas from './../assets/js/canvas.js'
-// export default {
-//   data() {
-//     return {
-//       message: 'Hello World!',
-//     }
-//   },
-//   mounted() {
-//     this.clickedButton()
-//   },
-//   methods: {
-//     clickedButton() {
-//       this.$refs.myButton.textContent = this.message
-//     },
-//   },
-// }
-//
+import createColoredCircles from '../assets/js/canvas/createColoredCircles.js'
+import circleCreator from './../assets/js/canvas/circleCreator.js'
+import circleColors from './../assets/js/canvas/circleColors.js'
+import { loadCanvas } from './../assets/js/canvas/loadCanvas.js'
+export default {
+  data() {
+    return {
+      circleColors,
+      circleCreator,
+      coloredCircles: [],
+      loadCanvas,
+      createColoredCircles,
+    }
+  },
+  mounted() {
+    const canvas = this.$refs.canvas
+    const canvasContext = canvas.getContext('2d')
+    const parentEl = this.$refs.canvasContainer.getBoundingClientRect()
+    const coloredCircles = this.createColoredCircles(
+      canvas,
+      parentEl,
+      canvasContext
+    )
+    this.loadCanvas(canvas, canvasContext, parentEl, coloredCircles)
+  },
+}
 </script>

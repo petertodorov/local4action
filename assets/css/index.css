@@ -46,15 +46,15 @@
   align-items: center;
 }
 
-.circles-container {
+.canvas-container {
   padding-right: 0.8rem;
-  background: beige;
   display: flex;
   flex: 0 1 100%;
 }
 
-#canvas5 {
-  width: 100%;
+canvas {
+  width:100%;
+  height:auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -65,12 +65,12 @@
 
 @media screen and (min-width: 768px) {
   .index-text-container {
-    flex: 0 1 50%;
+    flex: 0 1 70%;
   }
   .time-map-container {
     margin: 0 0 0 auto;
   }
-  .circles-container {
-    flex: 0 1 50%;
+  .canvas-container {
+    flex: 0 1 30%;
   }
 }
