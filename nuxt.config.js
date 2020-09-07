@@ -14,13 +14,13 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Local4Action',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
-        name: 'description',
+        name: 'Local4Action',
         content: process.env.npm_package_description || '',
       },
     ],
