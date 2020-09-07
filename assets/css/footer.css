@@ -1,13 +1,13 @@
 .footer-wrapper {
-  flex: 0 0 215px;
-  display: flex;
+  flex: 1 0 215px;
   width: 100%;
+  display: flex;
+  flex-flow:row wrap;
   background: #3c3b3c;
   color: white;
   font-size: 12px;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
-  min-height: 173px;
 }
 
 .footer-wrapper article {
