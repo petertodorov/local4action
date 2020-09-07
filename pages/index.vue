@@ -5,7 +5,12 @@
         <h1 class="text-title">
           Local Experiences Transforming Global Policies
         </h1>
-        <a href="/" class="index-text-button">Join The Global Acceleration</a>
+        <Button
+          :href="button.href"
+          :title="button.title"
+          :color="button.color"
+          :background="button.background"
+        />
       </section>
 
       <section class="time-map-container">
@@ -45,6 +50,12 @@ export default {
       coloredCircles: [],
       loadCanvas,
       createColoredCircles,
+      button: {
+        title: 'Join The Global Acceleration',
+        href: '/',
+        color: 'white',
+        background: '#34b8d9',
+      },
     }
   },
   mounted() {

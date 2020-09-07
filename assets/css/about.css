@@ -19,7 +19,7 @@
 .content-box {
   display: flex;
   flex-flow: row wrap;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 .content-box.small-para {
@@ -28,6 +28,10 @@
 
 .content-box.small-para p {
   width: 40%;
+}
+
+.content-box.apply {
+  width: 50%;
 }
 
 .content-box.left-padding {

@@ -21,20 +21,6 @@
   font-size: 10vw;
 }
 
-/* .index-text-button {
-  font-size: 0.8rem;
-  display: inline-block;
-  background: #34b8d9;
-  border-radius: 25px;
-  vertical-align: super;
-  padding: 0.5em 1em;
-  color: white;
-} */
-
-/* .index-text-button:hover {
-  opacity: 0.5;
-} */
-
 .time-map-container {
   flex: 0 0 10%;
   margin: 0 auto;

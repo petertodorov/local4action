@@ -46,14 +46,43 @@
           recusandae! Laudantium excepturi dicta suscipit.
         </p>
       </section>
+      <section class="content-box apply">
+        <h3>How can you apply?</h3>
+        <p>The last call to apply was Lorem ipsum dolor sit.</p>
+        <Button
+          :href="button.href"
+          :title="button.title"
+          :color="button.color"
+          :background="button.background"
+        />
+      </section>
     </article>
     <div class="circle-wrapper">
       <span class="circle blue"></span>
       <span class="circle red"></span>
       <span class="circle light-red"></span>
-
       <span class="circle yellow"></span>
       <span class="circle green"></span>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      button: {
+        title: 'Download for more details the Call for Local4Action HUBs',
+        href: '/',
+        color: 'white',
+        background: '#e80707',
+      },
+    }
+  },
+}
+</script>
+<style>
+.about-main-wrapper .simple-button {
+  margin: 2rem 0;
+}
+</style>
